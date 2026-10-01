@@ -4,228 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Umang Sharma — Site Reliability Engineer. AWS, Azure, Kubernetes, Terraform, CI/CD, observability.">
+    <title>Umang Sharma — Site Reliability Engineer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
 </head>
 
 <body>
-    <!-- Header -->
-    <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a href="#hero">
-                        <h1><span>U</span>mang <span>S</span>harma</h1>
-                    </a>
-                </div>
-                <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"></div>
-                    </div>
-                    <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li>
-                        <li><a href="#services" data-after="Service">Services</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#about" data-after="About">About</a></li>
-                        <li><a href="#contact" data-after="Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Nav -->
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="brand">Umang Sharma</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <nav class="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-    </section>
-    <!-- End Header -->
+    </header>
 
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero container">
+            <p class="eyebrow">Site Reliability Engineer</p>
+            <h1>Building resilient, automated cloud infrastructure.</h1>
+            <p class="lead">3.5 years designing and operating scalable systems across AWS, Azure, and Kubernetes — focused on uptime, automation, and taming production complexity.</p>
+            <div class="actions">
+                <a href="#projects" class="btn btn-primary">View projects</a>
+                <a href="resume.pdf" class="btn btn-secondary" download>Download resume</a>
+            </div>
+        </section>
 
-    <!-- Hero Section  -->
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>Hello, <span></span></h1>
-                <h1>My Name is <span></span></h1>
-                <h1>Umang<span></span></h1>
-                <a href="#projects" type="button" class="cta">Portfolio</a>
+        <!-- Skills -->
+        <section id="skills" class="container section">
+            <h2 class="section-title">Skills &amp; tooling</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>Cloud</h3>
+                    <p>AWS · Azure</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Orchestration</h3>
+                    <p>Kubernetes · Helm · Docker</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Infrastructure as Code</h3>
+                    <p>Terraform · Ansible</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CI/CD</h3>
+                    <p>GitLab CI · GitHub Actions · Jenkins</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Observability</h3>
+                    <p>Prometheus · Grafana · Datadog</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <p>Python · Bash · Go</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- End Hero Section  -->
+        </section>
 
-    <!-- Service Section -->
-    <section id="services">
-        <div class="services container">
-            <div class="service-top">
-                <h1 class="section-title">Frame<span>w</span>orks</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias voluptatum explicabo!</p>
+        <!-- Projects -->
+        <section id="projects" class="container section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>sre-infra</h3>
+                        <span class="badge">Private</span>
+                    </div>
+                    <p>Infrastructure-as-code and SRE tooling — Terraform modules, Kubernetes manifests, and automation for reliable cloud operations.</p>
+                </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Ansible-files-learning</h3>
+                        <a class="badge badge-link" href="https://github.com/UmangS21/Ansible-files-learning">View →</a>
+                    </div>
+                    <p>Ansible playbooks and roles for configuration management and automated server provisioning.</p>
+                </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Portfolio1</h3>
+                        <a class="badge badge-link" href="https://github.com/UmangS21/Portfolio1">View →</a>
+                    </div>
+                    <p>This site — a static, zero-build personal portfolio deployed on GitHub Pages.</p>
+                </article>
             </div>
-            <div class="service-bottom">
-                <div class="service-item">
-                    <div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" /></div>
-                    <h2>Angular</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><img src="https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png" /></div>
-                    <h2>React</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><img src="https://avatars.githubusercontent.com/u/27804?s=280&v=4" /></div>
-                    <h2>Django</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><img src="https://www.dotcom-monitor.com/blog/wp-content/uploads/sites/3/2020/05/Vue-logo-1.png" /></div>
-                    <h2>Vue</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Service Section -->
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">Recent <span>Projects</span></h1>
-            </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 1</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="https://miro.medium.com/max/8926/1*jAu5S36v-Otqui_uZYSSsg.jpeg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 2</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="https://miro.medium.com/max/8926/1*jAu5S36v-Otqui_uZYSSsg.jpeg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 3</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="https://miro.medium.com/max/8926/1*jAu5S36v-Otqui_uZYSSsg.jpeg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 4</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="https://miro.medium.com/max/8926/1*jAu5S36v-Otqui_uZYSSsg.jpeg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 5</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
-                            animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="https://miro.medium.com/max/8926/1*jAu5S36v-Otqui_uZYSSsg.jpeg" alt="img">
-                    </div>
+        <!-- About -->
+        <section id="about" class="container section">
+            <h2 class="section-title">About</h2>
+            <div class="about">
+                <img src="./img/img-2.jpg" alt="Umang Sharma" class="about-img">
+                <div class="about-body">
+                    <p>I'm a Site Reliability Engineer with 3.5 years of experience designing, automating, and maintaining scalable and reliable cloud infrastructure. My expertise spans AWS, Azure, Kubernetes, CI/CD, observability, and Infrastructure as Code with Terraform and Ansible.</p>
+                    <p>I enjoy solving production challenges, optimizing infrastructure costs, and driving automation to reduce manual toil — bridging development and operations with systems that are both highly reliable and efficient.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Projects Section -->
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="about container">
-            <div class="col-left">
-                <div class="about-img">
-                    <img src="./img/img-2.jpg" alt="img">
-                </div>
-            </div>
-            <div class="col-right">
-                <h1 class="section-title">About <span>me</span></h1>
-                <h2>Site Reliability Engineer</h2>
-                <p>Hi, I’m Umang Sharma, a Site Reliability Engineer (SRE) with 3.5 years of experience in designing, automating, and maintaining scalable and reliable cloud infrastructures.
-                   My expertise spans AWS, Azure, Kubernetes, CI/CD, observability, and Infrastructure as Code (Terraform, Ansible). I’m passionate about building resilient systems that ensure uptime, performance, and seamless deployments.
-                   I enjoy solving production challenges, optimizing infrastructure costs, and driving automation to reduce manual toil. My goal is to bridge the gap between development and operations by delivering systems that are both highly reliable and efficient.
-                   Outside of work, I like experimenting with new DevOps tools, improving deployment pipelines, and exploring scalable architectures</p>
-                <a href="#" class="cta">Download Resume</a>
-            </div>
-        </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact container">
-            <div>
-                <h1 class="section-title">Contact <span>info</span></h1>
-            </div>
-            <div class="contact-items">
+        <!-- Contact -->
+        <section id="contact" class="container section">
+            <h2 class="section-title">Contact</h2>
+            <dl class="contact">
                 <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-                    <div class="contact-info">
-                        <h1>Phone</h1>
-                        <h2>+91 9873704517</h2>
-                    </div>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:career.umangsharma@gmail.com">career.umangsharma@gmail.com</a></dd>
                 </div>
                 <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-                    <div class="contact-info">
-                        <h1>Email</h1>
-                        <h2>career.umangsharma@gmail.com</h2>
-                    </div>
+                    <dt>Phone</dt>
+                    <dd><a href="tel:+919873704517">+91 98737 04517</a></dd>
                 </div>
                 <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-                    <div class="contact-info">
-                        <h1>Address</h1>
-                        <h2>Noida, Uttar Pradesh, India</h2>
-                    </div>
+                    <dt>Location</dt>
+                    <dd>Noida, Uttar Pradesh, India</dd>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Contact Section -->
+                <div class="contact-item">
+                    <dt>LinkedIn</dt>
+                    <dd><a href="https://www.linkedin.com/in/umang-sharma-a90b351b2/">umang-sharma</a></dd>
+                </div>
+            </dl>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand">
-                <h1><span>U</span>mang <span>S</span>harma</h1>
-            </div>
-            <h2>Your Complete Web Solution</h2>
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="https://www.facebook.com/profile.php?id=100009149046648"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://www.instagram.com/_umangsharma._/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://www.linkedin.com/in/umang-sharma-a90b351b2/"><img src="linkedIn.png" /></a>
-                </div>
-            </div>
-            <p>Copyright © 2025 Umang. All rights reserved</p>
-        </div>
-    </section>
-    <!-- End Footer -->
+    <footer class="footer container">
+        <span>Umang Sharma</span>
+        <span>© 2025 · All rights reserved</span>
+    </footer>
+
     <script src="./app.js"></script>
 </body>
 
