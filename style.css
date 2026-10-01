@@ -133,8 +133,7 @@ a:hover { color: var(--primary-hover); }
 .awards { font-size: 0.9375rem; color: var(--foreground); padding: 14px 16px; background: var(--accent); color: var(--accent-foreground); border-radius: var(--radius); }
 
 /* About */
-.about { display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: start; }
-.about-img { width: 180px; height: 180px; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--border); }
+.about { max-width: 64ch; }
 .about-body p { color: var(--muted-foreground); margin-bottom: 14px; }
 .about-body p:last-child { margin-bottom: 0; }
 
