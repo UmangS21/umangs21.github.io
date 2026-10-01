@@ -121,6 +121,17 @@ a:hover { color: var(--primary-hover); }
 .badge-link { background: var(--accent); color: var(--accent-foreground); }
 .badge-link:hover { color: var(--accent-foreground); }
 
+/* Experience */
+.exp { margin-bottom: 28px; }
+.exp:last-of-type { margin-bottom: 20px; }
+.exp-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
+.exp-head h3 { font-weight: 500; font-size: 1.0625rem; }
+.exp-date { font-family: var(--font-mono); font-size: 0.8125rem; color: var(--muted-foreground); white-space: nowrap; }
+.exp ul { list-style: none; display: grid; gap: 8px; }
+.exp li { position: relative; padding-left: 18px; color: var(--muted-foreground); font-size: 0.9375rem; }
+.exp li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 5px; height: 5px; border-radius: 999px; background: var(--primary); }
+.awards { font-size: 0.9375rem; color: var(--foreground); padding: 14px 16px; background: var(--accent); color: var(--accent-foreground); border-radius: var(--radius); }
+
 /* About */
 .about { display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: start; }
 .about-img { width: 180px; height: 180px; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--border); }

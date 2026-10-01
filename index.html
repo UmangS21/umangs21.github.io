@@ -21,7 +21,7 @@
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
             <nav class="nav-links">
                 <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Experience</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -33,9 +33,9 @@
         <section class="hero container">
             <p class="eyebrow">Site Reliability Engineer</p>
             <h1>Building resilient, automated cloud infrastructure.</h1>
-            <p class="lead">3.5 years designing and operating scalable systems across AWS, Azure, and Kubernetes — focused on uptime, automation, and taming production complexity.</p>
+            <p class="lead">4 years ensuring reliability, scalability, and performance across cloud-native environments — Kubernetes, CI/CD, IaC, and observability, with 99%+ SLA adherence.</p>
             <div class="actions">
-                <a href="#projects" class="btn btn-primary">View projects</a>
+                <a href="#projects" class="btn btn-primary">View experience</a>
                 <a href="resume.pdf" class="btn btn-secondary" download>Download resume</a>
             </div>
         </section>
@@ -46,57 +46,60 @@
             <div class="skill-grid">
                 <div class="skill-card">
                     <h3>Cloud</h3>
-                    <p>AWS · Azure</p>
+                    <p>AWS · Azure · GCP</p>
                 </div>
                 <div class="skill-card">
                     <h3>Orchestration</h3>
-                    <p>Kubernetes · Helm · Docker</p>
+                    <p>Kubernetes · Docker · Karpenter · Operators</p>
                 </div>
                 <div class="skill-card">
                     <h3>Infrastructure as Code</h3>
-                    <p>Terraform · Ansible</p>
+                    <p>Terraform · Terragrunt</p>
                 </div>
                 <div class="skill-card">
                     <h3>CI/CD</h3>
-                    <p>GitLab CI · GitHub Actions · Jenkins</p>
+                    <p>GitLab · Argo CD · Jenkins · Helm</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Observability</h3>
-                    <p>Prometheus · Grafana · Datadog</p>
+                    <h3>Monitoring &amp; Logging</h3>
+                    <p>ELK Stack · Prometheus · Grafana</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Languages</h3>
-                    <p>Python · Bash · Go</p>
+                    <h3>Platforms</h3>
+                    <p>Linux · Cilium · APISIX</p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Experience -->
         <section id="projects" class="container section">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-grid">
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>sre-infra</h3>
-                        <span class="badge">Private</span>
-                    </div>
-                    <p>Infrastructure-as-code and SRE tooling — Terraform modules, Kubernetes manifests, and automation for reliable cloud operations.</p>
-                </article>
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Ansible-files-learning</h3>
-                        <a class="badge badge-link" href="https://github.com/UmangS21/Ansible-files-learning">View →</a>
-                    </div>
-                    <p>Ansible playbooks and roles for configuration management and automated server provisioning.</p>
-                </article>
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Portfolio1</h3>
-                        <a class="badge badge-link" href="https://github.com/UmangS21/Portfolio1">View →</a>
-                    </div>
-                    <p>This site — a static, zero-build personal portfolio deployed on GitHub Pages.</p>
-                </article>
-            </div>
+            <h2 class="section-title">Experience</h2>
+            <article class="exp">
+                <div class="exp-head">
+                    <h3>Site Reliability Engineer II · Innovaccer</h3>
+                    <span class="exp-date">Jul 2024 – Present</span>
+                </div>
+                <ul>
+                    <li>Upgraded 100+ Amazon EKS clusters (v1.29 → v1.31) with minimal downtime, improving stability and security.</li>
+                    <li>Rolled out Karpenter for optimized node provisioning, cutting infra cost and scaling time.</li>
+                    <li>Led multi-tenant migration of customers to shared Kubernetes clusters with minimal downtime.</li>
+                    <li>Built one-click AWS/Azure infrastructure automation with Terraform and CI/CD pipelines.</li>
+                    <li>Implemented Cilium (CNI) and APISIX (API gateway); maintained 100+ Helm charts and 24/7 on-call with 99%+ SLA.</li>
+                </ul>
+            </article>
+            <article class="exp">
+                <div class="exp-head">
+                    <h3>DevOps Engineer · Paytm (One97 Communications)</h3>
+                    <span class="exp-date">Aug 2021 – 2024</span>
+                </div>
+                <ul>
+                    <li>Migrated monolithic VM workloads to microservices on Amazon EKS, improving reliability and deploy speed.</li>
+                    <li>Saved ~$2,200/month (25–40%) by moving workloads to AWS Graviton instances.</li>
+                    <li>Provisioned infrastructure from scratch with Terraform for consistency across environments.</li>
+                    <li>Established company-wide centralized logging (ELK) and monitoring (Prometheus, Grafana), improving MTTR.</li>
+                </ul>
+            </article>
+            <p class="awards">★ Paytm Rockstar Award (2023) · ★ InnoAce Award (Innovaccer)</p>
         </section>
 
         <!-- About -->
@@ -105,8 +108,8 @@
             <div class="about">
                 <img src="./img/img-2.jpg" alt="Umang Sharma" class="about-img">
                 <div class="about-body">
-                    <p>I'm a Site Reliability Engineer with 3.5 years of experience designing, automating, and maintaining scalable and reliable cloud infrastructure. My expertise spans AWS, Azure, Kubernetes, CI/CD, observability, and Infrastructure as Code with Terraform and Ansible.</p>
-                    <p>I enjoy solving production challenges, optimizing infrastructure costs, and driving automation to reduce manual toil — bridging development and operations with systems that are both highly reliable and efficient.</p>
+                    <p>I'm a Site Reliability Engineer with 4 years of experience ensuring system reliability, scalability, and performance across cloud-native environments. My expertise spans Kubernetes, CI/CD, Infrastructure as Code, and observability, with a strong focus on incident management, automation, and service availability.</p>
+                    <p>I'm driven by improving SLIs/SLOs, optimizing infrastructure cost, and reducing manual toil through automation. B.Tech in Electronics &amp; Communication Engineering from GLBITM (2018–2022).</p>
                 </div>
             </div>
         </section>
