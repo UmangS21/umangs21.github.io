@@ -103,8 +103,11 @@ a:hover { color: var(--primary-hover); }
 .hero > *:nth-child(5) { animation-delay: 0.22s; }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
 .eyebrow {
-  font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 500;
-  letter-spacing: 0.04em; color: var(--primary); margin-bottom: 20px;
+  display: inline-block;
+  font-family: var(--font-mono); font-size: 0.875rem; font-weight: 500;
+  letter-spacing: 0.02em; color: var(--accent-foreground);
+  background: var(--accent); border: 1px solid var(--border-subtle);
+  padding: 6px 14px; border-radius: 999px; margin-bottom: 22px;
 }
 .hero h1 {
   font-family: var(--font-display);
